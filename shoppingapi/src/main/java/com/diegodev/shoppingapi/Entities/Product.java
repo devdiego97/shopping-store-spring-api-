@@ -13,10 +13,19 @@ import jakarta.persistence.Table;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+
 @Entity
 @Table(name="products")
+@Getter
+@Setter
+@AllArgsConstructor()
+@NoArgsConstructor()
 public class Product {
     
     @Id
